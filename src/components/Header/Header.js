@@ -1,12 +1,14 @@
 "use client"
 
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import styles from './header.module.css'
 import Link from 'next/link'
+import Image from 'next/image'
 
 import AboutDropDown from './DropDown/AboutDropDown'
+import ServicesDropDown from './DropDown/ServicesDropDown'
 
-// import logo from '/images/logo.png'
+import logo from '/public/images/logo.png'
 
 const Header = () => {
   const [click, setClick] = useState(false)
@@ -20,7 +22,14 @@ const Header = () => {
     <nav className={styles.navbar}>
       <div className={styles.nav__logo__conntainer}>
         <Link href='/' className={styles.nav__logo__link}>
-          <img src="{logo}" alt="logo" className={styles.nav__logo__image} />
+          <Image
+            className={styles.nav__logo__image}
+            src={logo}
+            alt='logo'
+            width={130}
+            height={20}
+          />
+
         </Link>
       </div>
 
@@ -36,7 +45,7 @@ const Header = () => {
           <Link href='/services' className={styles.nav__link} >
             診療項目 <i className={styles.arrow__icon}></i>
           </Link>
-          {dropdownitem && <ItemDropdown />}
+          {dropdownitem && <ServicesDropDown />}
         </li>
 
         <li className={styles.nav__item}>
@@ -55,12 +64,11 @@ const Header = () => {
           </Link>
         </li>
         <li className={styles.nav__item}>
-          <Link href='/contact' className='nav__link'>
+          <Link href='/contact' className={styles.nav__link}>
             立即預約
           </Link>
         </li>
       </ul>
-
     </nav>
   )
 }

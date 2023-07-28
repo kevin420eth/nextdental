@@ -1,4 +1,6 @@
-import React, { useState } from 'react'
+"use client"
+import { useState } from 'react'
+import Link from 'next/link'
 import AboutMenu from '../MenuItems/AboutMenu'
 import './dropdown.css'
 
@@ -12,7 +14,7 @@ const AboutDropDown = () => {
         {AboutMenu.map((item, index) => {
           return (
             <li key={index}>
-              <Link className={item.cName} to={item.path} onClick={() => { setClick(false) }}>{item.title}</Link>
+              <Link className={item.cName} href={item.path} onClick={() => { setClick(false) }}>{item.title}</Link>
             </li>
           )
         })}

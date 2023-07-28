@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useState } from 'react'
+import Link from 'next/link'
 import MenuItems from '../MenuItems/ServicesMenu'
 import './dropdown.css'
 
-const ServicesAboutDropDown = () => {
+const ServicesDropDown = () => {
   const[click, setClick] = useState(false)
   const handleClick = () => setClick(!click)
 
@@ -13,7 +13,7 @@ const ServicesAboutDropDown = () => {
         {MenuItems.map((item, index) => {
           return (
             <li key={index}>
-              <Link className={item.cName} to={item.path} onClick={() => { setClick(false) }}>{item.title}</Link>
+              <Link className={item.cName} href={item.path} onClick={() => { setClick(false) }}>{item.title}</Link>
             </li>
           )
         })}
@@ -22,4 +22,4 @@ const ServicesAboutDropDown = () => {
   )
 }
 
-export default ServicesAboutDropDown
+export default ServicesDropDown

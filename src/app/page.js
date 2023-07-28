@@ -1,5 +1,3 @@
-import Image from 'next/image'
-import styles from './page.module.css'
 import About from '@/components/Home/About/About'
 import Appointment from '@/components/Home/Appointment/Appointment'
 import Enviroment from '@/components/Home/Enviroment/Enviroment'

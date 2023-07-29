@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-// import EducationBlogSlideShow from './EducationBlogSlideShow'
+import EducationBlogSlideShow from './EducationBlogSlideShow'
 
 import './page.css'
 
@@ -54,7 +54,7 @@ const Articles = () => {
             <section className='articles__education__section section '>
                 <h1 className='section__title'>精選文章</h1>
                 <div className='article__education__container'>
-                    {/* <EducationBlogSlideShow /> */}
+                    <EducationBlogSlideShow />
                 </div>
             </section>
         </div>

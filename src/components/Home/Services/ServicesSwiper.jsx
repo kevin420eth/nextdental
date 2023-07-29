@@ -1,8 +1,9 @@
-import React from 'react'
+"use client"
+import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { EffectCoverflow, Pagination, Navigation, Autoplay } from 'swiper/modules'
 
-import servicesData from '../../../data/servicesData'
+import servicesData from '@/data/servicesData'
 
 import 'swiper/css'
 import 'swiper/css/effect-coverflow'
@@ -33,7 +34,7 @@ const ServicesSwiper = () => {
             {servicesData.map((item, key) => {
                 return (
                     <SwiperSlide className='home__services__slide shadow 646' key={key}>
-                        <img src={item.serviceImage} alt={item.serviceName} />
+                        <Image src={item.serviceImage} alt={`澄臻美學牙醫診所 - ${item.serviceName}`}></Image>
                     </SwiperSlide>
                 )
             })}

@@ -1,0 +1,31 @@
+import Image from 'next/image'
+import './page.css'
+import banner from '/public/images/banner.png'
+import _servicesData from '@/data/servicesData'
+
+const Service = ({ params }) => {
+    const serviceNamePool = ['teethjustify', 'teethfix', 'plant', 'wholemtf', 'teethbeauty', 'kidteeth', 'homedentist', '3d', 'root', 'laser']
+    const serviceIndex = serviceNamePool.indexOf(params.service)
+    const serviceData = _servicesData[serviceIndex]
+
+    return (
+        <div>
+            <div className='banner__container'>
+                <Image src={banner} alt="banner" />
+            </div>
+            <section className='service__section section '>
+                <h1 className='section__title'>{serviceData.serviceName}</h1>
+                <div className='service__container'>
+                    <div className='service__image__container'>
+                        <Image className='service__image' src={serviceData.serviceImage} alt={`澄臻美學牙醫診所 - ${serviceData.serviceName}`} />
+                    </div>
+                    <div className='text__container'>
+                        <p className='service__description'>{serviceData.serviceLongDescription}</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    )
+}
+
+export default Service

@@ -26,8 +26,6 @@ const Header = () => {
             className={styles.nav__logo__image}
             src={logo}
             alt='logo'
-            width={130}
-            height={20}
           />
 
         </Link>

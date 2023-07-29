@@ -14,10 +14,13 @@
   
   .nav__logo__conntainer{
     height:60px;
+    width:120px;
   }
   
   .nav__logo__image{
     height: 100%;
+    width:100%;
+    object-fit: contain;
   }
   
   .nav__menu {

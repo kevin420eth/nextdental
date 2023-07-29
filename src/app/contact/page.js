@@ -2,6 +2,11 @@ import Image from 'next/image'
 import './page.css'
 import banner from '/public/images/banner.png'
 
+export const metadata = {
+    title: '澄臻美學牙醫診所 - 立即預約',
+    description: '台中市最優值得牙醫診所',
+}
+
 const Contact = () => {
     return (
         <div>

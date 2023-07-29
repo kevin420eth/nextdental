@@ -11,6 +11,11 @@ import case_4 from '/public/images/case_4.png'
 import case_5 from '/public/images/case_5.png'
 import case_10 from '/public/images/case_10.png'
 
+export const metadata = {
+    title: '澄臻美學牙醫診所 - 相關文章',
+    description: '台中市最優值得牙醫診所',
+}
+
 const Articles = () => {
     return (
         <div>

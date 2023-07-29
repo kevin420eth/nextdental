@@ -5,6 +5,11 @@ import './page.css'
 import doctorData from '@/data/doctorData'
 import banner from '/public/images/banner.png'
 
+export const metadata = {
+    title: '澄臻美學牙醫診所 - 醫療團隊',
+    description: '台中市最優值得牙醫診所',
+}
+
 const Team = () => {
     return (
         <div>

@@ -3,6 +3,17 @@ import './page.css'
 import banner from '/public/images/banner.png'
 import _servicesData from '@/data/servicesData'
 
+export async function generateMetadata({ params }) {
+    const serviceNamePool = ['teethjustify', 'teethfix', 'plant', 'wholemtf', 'teethbeauty', 'kidteeth', 'homedentist', '3d', 'root', 'laser']
+    const serviceIndex = serviceNamePool.indexOf(params.service)
+    const serviceData = _servicesData[serviceIndex]
+
+    return {
+        title: `澄臻美學牙醫診所 - ${serviceData.serviceName}`,
+        description: '台中市最優值得牙醫診所',
+    }
+}
+
 const Service = ({ params }) => {
     const serviceNamePool = ['teethjustify', 'teethfix', 'plant', 'wholemtf', 'teethbeauty', 'kidteeth', 'homedentist', '3d', 'root', 'laser']
     const serviceIndex = serviceNamePool.indexOf(params.service)

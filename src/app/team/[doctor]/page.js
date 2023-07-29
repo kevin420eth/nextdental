@@ -6,6 +6,17 @@ import banner from '/public/images/banner.png'
 import { AiOutlineCheck } from 'react-icons/ai'
 import dynamic from 'next/dynamic'
 
+export async function generateMetadata({ params }) {
+    const doctorNamePool = ['johnnylin', 'johnnilin', 'linjohnny', 'linann', 'linpopo', 'linhathway', 'linpoki', 'linforest']
+    const doctorIndex = doctorNamePool.indexOf(params.doctor)
+    const doctorData = _doctorData[doctorIndex]
+
+    return {
+        title: `澄臻美學牙醫診所 - ${doctorData.name}${doctorData.title}`,
+        description: '台中市最優值得牙醫診所',
+    }
+}
+
 const Member = ({ params }) => {
     const doctorNamePool = ['johnnylin', 'johnnilin', 'linjohnny', 'linann', 'linpopo', 'linhathway', 'linpoki', 'linforest']
     const doctorIndex = doctorNamePool.indexOf(params.doctor)

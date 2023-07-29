@@ -4,6 +4,11 @@ import './page.css'
 import banner from '/public/images/banner.png'
 import servicesData from '@/data/servicesData'
 
+export const metadata = {
+    title: '澄臻美學牙醫診所 - 診療項目',
+    description: '台中市最優值得牙醫診所',
+}
+
 const Services = () => {
     return (
         <div>

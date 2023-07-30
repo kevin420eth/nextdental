@@ -1,5 +1,46 @@
 .home__enviroment__section {
-  border:2px solid black;
   height: 100vh;
-  background-color: aliceblue;
+  padding-bottom: 0;
+}
+
+.home__enviroment__container {
+  height: 100%;
+  position: relative;
+}
+
+.home__enviroment__image {
+  border-radius: 2rem;
+  width: 540px;
+  height: 330px;
+  position: absolute;
+}
+
+.home__enviroment__container .home__enviroment__image:nth-child(1) {
+  left: 0;
+}
+
+.home__enviroment__container .home__enviroment__image:nth-child(2) {
+  right: 0;
+  bottom: 0;
+}
+
+.home__enviroment__text__container {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  text-align: start;
+  font-size: 2rem;
+  line-height: 2;
+}
+
+.home__enviroment__container .home__enviroment__text__container:nth-child(3) {
+  padding-top: 70px;
+  padding-left: 80px;
+  right: 0;
+}
+
+.home__enviroment__container .home__enviroment__text__container:nth-child(4) {
+  padding-top: 80px;
+  padding-left: 100px;
+  bottom: 0;
 }

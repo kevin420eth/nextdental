@@ -1,7 +1,6 @@
-import React from 'react'
-import './about.css'
 import Image from 'next/image'
 import about from '/public/images/about.png'
+import './about.css'
 
 const About = () => {
     return (

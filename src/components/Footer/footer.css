@@ -1,0 +1,40 @@
+.footer__section {
+    color: rgb(100, 100, 100);
+    background-color: white;
+    padding: 2rem 6rem;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .footer__content__container {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+  }
+  
+  .footer__logo__container {
+    width: 300px;
+  }
+  
+  .footer__contact__information {
+    text-align: start;
+  }
+  
+  .footer__qrcode__container {
+    width: 150px;
+  }
+  
+  hr {
+    margin-top: 2rem;
+    border: none;
+    border-bottom: dashed rgb(125, 125, 125);
+    width: 100%;
+  }
+  
+  .footer__rights__reserved {
+    margin-top: 2rem;
+  }
+  

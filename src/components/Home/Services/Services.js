@@ -1,6 +1,6 @@
-import './services.css'
 import Link from 'next/link'
 import ServicesSwiper from './ServicesSwiper'
+import './services.css'
 
 const Services = () => {
   return (

@@ -1,13 +1,11 @@
 "use client"
-
-import React, { useState } from 'react'
+import { useState } from 'react'
 import styles from './header.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
-
 import AboutDropDown from './DropDown/AboutDropDown'
 import ServicesDropDown from './DropDown/ServicesDropDown'
-
+import { AiOutlineClose, AiOutlineMenu, AiOutlineDown } from 'react-icons/ai'
 import logo from '/public/images/logo.png'
 
 const Header = () => {
@@ -27,21 +25,20 @@ const Header = () => {
             src={logo}
             alt='logo'
           />
-
         </Link>
       </div>
 
       <ul className={click ? `${styles.nav__menu} ${styles.active}` : styles.nav__menu}>
         <li className={styles.nav__item} onMouseEnter={() => { setDropdownAbout(true) }} onMouseLeave={() => { setDropdownAbout(false) }}>
           <Link href='/' className={styles.nav__link} >
-            關於澄臻 <i className={styles.arrow__icon}></i>
+            關於澄臻 <i className={styles.arrow__icon}>{<AiOutlineDown />}</i>
           </Link>
           {dropdownabout && <AboutDropDown />}
         </li>
 
         <li className={styles.nav__item} onMouseEnter={() => { setDropdownItem(true) }} onMouseLeave={() => { setDropdownItem(false) }}>
           <Link href='/services' className={styles.nav__link} >
-            診療項目 <i className={styles.arrow__icon}></i>
+            診療項目 <i className={styles.arrow__icon}>{<AiOutlineDown />}</i>
           </Link>
           {dropdownitem && <ServicesDropDown />}
         </li>
@@ -67,6 +64,13 @@ const Header = () => {
           </Link>
         </li>
       </ul>
+
+      <div className={styles.menu__icon} onClick={handleClick}>
+        <i className=''>
+          {click ? <AiOutlineMenu /> : <AiOutlineClose />}
+        </i>
+      </div>
+
     </nav>
   )
 }

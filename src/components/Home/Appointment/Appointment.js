@@ -1,6 +1,5 @@
-import React from 'react'
-import './appointment.css'
 import Link from 'next/link'
+import './appointment.css'
 
 const Appointment = () => {
     return (

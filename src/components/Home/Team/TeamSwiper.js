@@ -1,9 +1,10 @@
 "use client"
 import Image from 'next/image'
+import Link from 'next/link'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { EffectCoverflow, Pagination, Navigation, Autoplay } from 'swiper/modules'
 
-import servicesData from '@/data/servicesData'
+import doctorData from '@/data/doctorData'
 
 import 'swiper/css'
 import 'swiper/css/effect-coverflow'
@@ -14,7 +15,7 @@ import './teamSwiper.css'
 const TeamSwiper = () => {
     return (
         <Swiper
-            className="home__services__swiper"
+            className="home__team__swiper"
             effect={'coverflow'}
             grabCursor={true}
             centeredSlides={true}
@@ -31,10 +32,12 @@ const TeamSwiper = () => {
             autoplay={{ delay: 3000, pauseOnMouseEnter: true }}
             modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
         >
-            {servicesData.map((item, key) => {
+            {doctorData.map((item, key) => {
                 return (
-                    <SwiperSlide className='home__services__slide shadow 646' key={key}>
-                        <Image src={item.serviceImage} alt={`澄臻美學牙醫診所 - ${item.serviceName}`}></Image>
+                    <SwiperSlide className='home__team__slide shadow' key={key}>
+                        <Link href={`/team/${item.route}`}>
+                            <Image src={item.profilePhoto} alt={`澄臻美學牙醫診所 - ${item.name}${item.title}`}></Image>
+                        </Link>
                     </SwiperSlide>
                 )
             })}

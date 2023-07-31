@@ -1,4 +1,4 @@
-.home__services__swiper {
+.home__team__swiper {
     width: 100%;
     padding-bottom: 50px;
     --swiper-navigation-size: 80px;
@@ -7,14 +7,14 @@
     --swiper-navigation-color: var(--swiper-theme-color);
   }
   
-  .home__services__slide {
+  .home__team__slide {
     border-radius: 2rem;
     width: 300px;
-    height: 300px;
+    height: 400px;
     overflow: hidden;
   }
   
-  .home__services__slide img {
+  .home__team__slide img {
     display: block;
     width: 100%;
     height: 100%;

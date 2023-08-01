@@ -65,6 +65,12 @@ const Header = () => {
         </li>
       </ul>
 
+      <div className='social__media__container'>
+        <div className=''>
+
+        </div>
+      </div>
+
       <div className={styles.menu__icon} onClick={handleClick}>
         <i className=''>
           {click ? <AiOutlineMenu /> : <AiOutlineClose />}

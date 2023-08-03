@@ -6,6 +6,7 @@ import Image from 'next/image'
 import AboutDropDown from './DropDown/AboutDropDown'
 import ServicesDropDown from './DropDown/ServicesDropDown'
 import { AiOutlineClose, AiOutlineMenu, AiOutlineDown } from 'react-icons/ai'
+import { LiaToothSolid } from 'react-icons/lia'
 import logo from '/public/images/logo.png'
 
 const Header = () => {
@@ -71,9 +72,70 @@ const Header = () => {
         </div>
       </div>
 
-      <div className={styles.menu__icon} onClick={handleClick}>
+      <div className={`${styles.mobile__menu} ${click ? styles.mobile__menu__open : styles.mobile__menu__close}`}>
+        <div className={styles.mobile__menu__logo__container}>
+          <p>澄臻美學牙醫診所</p>
+        </div>
+        <ul className={styles.mobile__menu__list}>
+          <li className={styles.mobile__nav__item} onClick={() => { closeMobileMenu() }}>
+            <Link href='/' className={styles.mobile__nav__link} >
+              <i className={styles.mobile__menu__item__icon}>
+                <LiaToothSolid />
+              </i>
+              關於澄臻
+            </Link>
+          </li>
+
+          <li className={styles.mobile__nav__item} onClick={() => { closeMobileMenu() }}>
+            <Link href='/services' className={styles.mobile__nav__link} >
+              <i className={styles.mobile__menu__item__icon}>
+                <LiaToothSolid />
+              </i>
+              診療項目
+            </Link>
+          </li>
+
+          <li className={styles.mobile__nav__item} onClick={() => { closeMobileMenu() }}>
+            <Link href='/team' className={styles.mobile__nav__link}>
+              <i className={styles.mobile__menu__item__icon}>
+                <LiaToothSolid />
+              </i>
+              醫療團隊
+            </Link>
+          </li>
+
+          <li className={styles.mobile__nav__item} onClick={() => { closeMobileMenu() }}>
+            <Link href='/enviroment' className={styles.mobile__nav__link}>
+              <i className={styles.mobile__menu__item__icon}>
+                <LiaToothSolid />
+              </i>
+              診所環境
+            </Link>
+          </li>
+
+          <li className={styles.mobile__nav__item} onClick={() => { closeMobileMenu() }}>
+            <Link href='/articles' className={styles.mobile__nav__link}>
+              <i className={styles.mobile__menu__item__icon}>
+                <LiaToothSolid />
+              </i>
+              相關文章
+            </Link>
+          </li>
+
+          <li className={styles.mobile__nav__item} onClick={() => { closeMobileMenu() }}>
+            <Link href='/contact' className={styles.mobile__nav__link}>
+              <i className={styles.mobile__menu__item__icon}>
+                <LiaToothSolid />
+              </i>
+              立即預約
+            </Link>
+          </li>
+        </ul>
+      </div>
+
+      <div className={styles.menu__icon} onClick={() => { handleClick() }}>
         <i className=''>
-          {click ? <AiOutlineMenu /> : <AiOutlineClose />}
+          {click ? <AiOutlineClose /> : <AiOutlineMenu />}
         </i>
       </div>
 

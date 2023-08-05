@@ -23,13 +23,22 @@ const Articles = () => {
                 <div className='spotlight__container'>
                     <Link href="/articles/article_10" className='main__spotlight__container shadow'>
                         <Image className='main__spotlight__imgae' src={case_10} alt="" />
+                        <div className='article__image__mask'>
+                            <p>標題</p>
+                        </div>
                     </Link>
                     <div className='sub__spotlight__container'>
                         <Link href="/articles/article_4" className='sub__spotlight__flagment shadow'>
                             <Image className='sub__spotlight__flagment__image' src={case_4} alt="" />
+                            <div className='article__image__mask'>
+                                <p>標題</p>
+                            </div>
                         </Link>
                         <Link href="/articles/article_5" className='sub__spotlight__flagment'>
                             <Image className='sub__spotlight__flagment__image' src={case_5} alt="" />
+                            <div className='article__image__mask'>
+                                <p>標題</p>
+                            </div>
                         </Link>
                     </div>
                 </div>
@@ -40,12 +49,21 @@ const Articles = () => {
                 <div className='articles__model__container'>
                     <Link href="/articles/article_3" className='model__container shadow'>
                         <Image className='model__image' src={case_3} alt="" />
+                        <div className='article__image__mask'>
+                            <p>標題</p>
+                        </div>
                     </Link>
                     <Link href="/articles/article_1" className='model__container shadow'>
                         <Image className='model__image' src={case_1} alt="" />
+                        <div className='article__image__mask'>
+                            <p>標題</p>
+                        </div>
                     </Link>
                     <Link href="/articles/article_2" className='model__container shadow'>
                         <Image className='model__image' src={case_2} alt="" />
+                        <div className='article__image__mask'>
+                            <p>標題</p>
+                        </div>
                     </Link>
                 </div>
 

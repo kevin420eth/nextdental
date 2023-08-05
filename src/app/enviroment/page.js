@@ -7,7 +7,7 @@ export const metadata = {
 
 const Enviroment = () => {
     return (
-        <section className='home__enviroment__section section'>
+        <section className='enviroment__section section'>
         </section>
     )
 }

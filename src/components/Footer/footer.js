@@ -6,6 +6,7 @@ import line_qrcode from '/public/images/line_qrcode.png'
 import instagram from '/public/images/instagram.png'
 import facebook from '/public/images/facebook.png'
 import youtube from '/public/images/youtube.png'
+import line from '/public/images/line.png'
 
 const Footer = () => {
     const currentDate = new Date()
@@ -20,8 +21,17 @@ const Footer = () => {
                 <div className='footer__contact__information'>
                     <p className='footer__telephone'>電話: (04)-22355670</p>
                     <p className='footer__address'>地址: 台中市北屯區文心路四段151號</p>
-                    <p className='footer__line'>Line: @johnny666</p>
+
                     <div className='footer__social__media__container'>
+                        <Link href='https://line.me/ti/p/MHu0amc4sW' target='_blank'>
+                            <Image
+                                className='footer__social__media__logo'
+                                width={25}
+                                height={25}
+                                src={line}
+                                alt='line__logo'
+                            />
+                        </Link>
                         <Link href='https://instagram.com' target='_blank'>
                             <Image
                                 className='footer__social__media__logo'
@@ -49,11 +59,7 @@ const Footer = () => {
                                 alt='youtube__logo'
                             />
                         </Link>
-
                     </div>
-                </div>
-                <div className='footer__qrcode__container'>
-                    <Image className='footer__qrcode__image' src={line_qrcode} alt="logo" />
                 </div>
             </div>
             <hr />

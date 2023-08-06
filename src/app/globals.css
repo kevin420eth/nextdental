@@ -100,24 +100,24 @@ img {
 
 /*============================================= Media Query =============================================*/
 
-/* Responsive Ttypography */
 @media screen and (max-width: 1200px) {
 }
 
 /* For large devices */
 @media screen and (max-width: 992px) {
-  .button {
-    padding: 1rem 1.75rem;
-  }
 }
 
-/* For medium devices */
 @media screen and (max-width: 768px) {
 }
 
 @media screen and (max-width: 576px) {
+  .section__title {
+    font-size: 1.5rem;
+  }
 }
 
-/* For small devices */
 @media screen and (max-width: 350px) {
+}
+
+@media screen and (max-width: 300px) {
 }

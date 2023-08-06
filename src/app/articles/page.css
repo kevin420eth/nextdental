@@ -84,7 +84,8 @@
 .article__image__mask {
   background-color: rgba(50, 50, 50, 0.85);
   color: aliceblue;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  text-align: start;
   display: flex;
   justify-content: flex-start;
   align-items: center;

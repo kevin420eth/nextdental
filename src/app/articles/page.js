@@ -24,20 +24,20 @@ const Articles = () => {
                     <Link href="/articles/article_10" className='main__spotlight__container shadow'>
                         <Image className='main__spotlight__imgae' src={case_10} alt="" />
                         <div className='article__image__mask'>
-                            <p>標題</p>
+                            <p className='article__image__mask__title'>重建牙齒永遠不嫌晚, 找回你的自信!</p>
                         </div>
                     </Link>
                     <div className='sub__spotlight__container'>
                         <Link href="/articles/article_4" className='sub__spotlight__flagment shadow'>
                             <Image className='sub__spotlight__flagment__image' src={case_4} alt="" />
                             <div className='article__image__mask'>
-                                <p>標題</p>
+                                <p className='article__image__mask__title'>10個陶瓷貼片的好處</p>
                             </div>
                         </Link>
                         <Link href="/articles/article_5" className='sub__spotlight__flagment'>
                             <Image className='sub__spotlight__flagment__image' src={case_5} alt="" />
                             <div className='article__image__mask'>
-                                <p>標題</p>
+                                <p className='article__image__mask__title'>矯正牙齒須要多久?</p>
                             </div>
                         </Link>
                     </div>
@@ -50,19 +50,26 @@ const Articles = () => {
                     <Link href="/articles/article_3" className='model__container shadow'>
                         <Image className='model__image' src={case_3} alt="" />
                         <div className='article__image__mask'>
-                            <p>標題</p>
+                            <p className='article__image__mask__title'>台中服飾店板娘林小姐 -
+                            <br />
+                            去了澄臻之後, 我的人生都不一樣了 耶呼!</p>
                         </div>
                     </Link>
                     <Link href="/articles/article_1" className='model__container shadow'>
                         <Image className='model__image' src={case_1} alt="" />
                         <div className='article__image__mask'>
-                            <p>標題</p>
+                            <p className='article__image__mask__title'>華航空服許小姐 -
+                            <br />
+                            澄臻的貼片真的是太棒了</p>
                         </div>
                     </Link>
                     <Link href="/articles/article_2" className='model__container shadow'>
                         <Image className='model__image' src={case_2} alt="" />
                         <div className='article__image__mask'>
-                            <p>標題</p>
+                            <p className='article__image__mask__title'>日月光集團董座千金 -
+                            <br />
+                            澄臻美學讚
+                            </p>
                         </div>
                     </Link>
                 </div>

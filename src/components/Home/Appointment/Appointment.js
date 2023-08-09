@@ -12,7 +12,7 @@ const Appointment = () => {
                     微笑的魅力如同一幅藝術傑作，笑容設計更被視為藝術創作的絕佳體現
                     <br />我們致力於追求完美的美學設計工藝，為你打造一個迷人且獨一無二的笑容。
                 </p>
-                <Link href='/contact' className='home__appointment__button'>
+                <Link href='/contact' className='primary__button'>
                     立即預約諮詢
                 </Link>
             </div>

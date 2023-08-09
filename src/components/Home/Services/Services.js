@@ -1,15 +1,43 @@
 import Link from 'next/link'
-import ServicesSwiper from './ServicesSwiper'
+import Image from 'next/image'
 import './services.css'
+import service_1 from '/public/images/service_1.png'
+import service_3 from '/public/images/service_3.png'
+import service_5 from '/public/images/service_5.png'
 
 const Services = () => {
   return (
     <section className='home__services__section section'>
+      <h1 className='section__title'>最專業的醫療技術</h1>
       <div className='home__sevices__container'>
-      <h1 className='section__title'>診療項目</h1>
-        <ServicesSwiper />
-        <Link href="/services" className='home__services__button'>查看更多</Link>
+        <div className='home__sevice__container'>
+          <div className='home__service__image__container'>
+            <Image src={service_1} alt='' className='home__service__image' />
+          </div>
+          <p className='home__service__text__title'>水感陶瓷貼片</p>
+          <p className='home__service__text__description'>解放你微笑魅力</p>
+        </div>
+
+        <div className='home__sevice__container'>
+          <div className='home__service__image__container'>
+            <Image src={service_3} alt='' className='home__service__image' />
+          </div>
+          <p className='home__service__text__title'>全植牙</p>
+          <p className='home__service__text__description'>無痛植牙好舒爽</p>
+        </div>
+
+        <div className='home__sevice__container'>
+          <div className='home__service__image__container'>
+            <Image src={service_5} alt='' className='home__service__image' />
+          </div>
+          <p className='home__service__text__title'>牙齒美白</p>
+          <p className='home__service__text__description'>一白遮三醜</p>
+        </div>
+
       </div>
+      <Link href='/enviroment' className='primary__button'>
+        查看診療項目
+      </Link>
     </section>
   )
 }

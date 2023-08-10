@@ -30,6 +30,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: rgb(0, 0, 0);
+  white-space: nowrap;
 }
 
 body,
@@ -54,11 +55,6 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 /*========================================= Reuseable CSS Class ==========================================*/
@@ -99,7 +95,6 @@ img {
 }
 
 .primary__button {
-  margin-top: 2rem;
   align-items: center;
   appearance: none;
   background-image: radial-gradient(
@@ -155,16 +150,21 @@ img {
 @media screen and (max-width: 1200px) {
 }
 
-/* For large devices */
 @media screen and (max-width: 992px) {
+  .section__title {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .section{
+    padding:0 30px 100px;
+  }
 }
 
 @media screen and (max-width: 576px) {
-  .section__title {
-    font-size: 1.5rem;
+  .section{
+    padding:0 10px 100px;
   }
 }
 

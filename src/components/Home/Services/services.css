@@ -3,8 +3,10 @@
 }
 
 .home__sevices__container {
+  border:2px solid black;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
 .home__sevice__container {
@@ -35,4 +37,40 @@
 
 .home__service__text__description{
   margin-top: 1rem;
+}
+
+/*Media Query*/
+
+@media screen and (max-width: 992px) {
+.home__service__image__container{
+  width:180px;
+  height:180px
+}
+}
+
+@media screen and (max-width: 768px) {
+  .home__service__image__container{
+    width:125px;
+    height:125px
+  }
+  .home__service__text__title, .home__service__text__description{
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .home__service__image__container{
+    width:80px;
+    height:80px
+  }
+
+  .home__service__text__title, .home__service__text__description{
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+}
+
+@media screen and (max-width: 300px) {
 }

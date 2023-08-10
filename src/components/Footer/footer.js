@@ -26,8 +26,6 @@ const Footer = () => {
                         <Link href='https://line.me/ti/p/MHu0amc4sW' target='_blank'>
                             <Image
                                 className='footer__social__media__logo'
-                                width={25}
-                                height={25}
                                 src={line}
                                 alt='line__logo'
                             />
@@ -35,8 +33,6 @@ const Footer = () => {
                         <Link href='https://instagram.com' target='_blank'>
                             <Image
                                 className='footer__social__media__logo'
-                                width={25}
-                                height={25}
                                 src={instagram}
                                 alt='instagram__logo'
                             />
@@ -44,8 +40,6 @@ const Footer = () => {
                         <Link href='https://facebook.com' target='_blank'>
                             <Image
                                 className='footer__social__media__logo'
-                                width={25}
-                                height={25}
                                 src={facebook}
                                 alt='facebook__logo'
                             />
@@ -53,8 +47,6 @@ const Footer = () => {
                         <Link href='https://youtube.com' target='_blank'>
                             <Image
                                 className='footer__social__media__logo'
-                                width={25}
-                                height={25}
                                 src={youtube}
                                 alt='youtube__logo'
                             />

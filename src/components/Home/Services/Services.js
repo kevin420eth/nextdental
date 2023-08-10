@@ -1,9 +1,11 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import './services.css'
 import service_1 from '/public/images/service_1.png'
 import service_3 from '/public/images/service_3.png'
 import service_5 from '/public/images/service_5.png'
+import ServicesSwiper from './ServicesSwiper'
+import './services.css'
+
 
 const Services = () => {
   return (
@@ -34,6 +36,7 @@ const Services = () => {
           <p className='home__service__text__description'>一白遮三醜</p>
         </div>
 
+        <ServicesSwiper />
       </div>
       <Link href='/enviroment' className='primary__button'>
         查看診療項目

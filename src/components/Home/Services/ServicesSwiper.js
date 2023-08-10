@@ -1,5 +1,6 @@
 "use client"
 import Image from 'next/image'
+import Link from 'next/link'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { EffectCoverflow, Pagination, Navigation, Autoplay } from 'swiper/modules'
 
@@ -34,7 +35,12 @@ const ServicesSwiper = () => {
             {servicesData.map((item, key) => {
                 return (
                     <SwiperSlide className='home__services__slide shadow 646' key={key}>
-                        <Image src={item.serviceImage} alt={`澄臻美學牙醫診所 - ${item.serviceName}`}></Image>
+                        <Link href={`/services/${item.route}`}>
+                            <Image src={item.serviceImage} alt={`澄臻美學牙醫診所 - ${item.serviceName}`}></Image>
+                            <div className='home__team__slide__mask'>
+                                <p>{item.serviceName}</p>
+                            </div>
+                        </Link>
                     </SwiperSlide>
                 )
             })}

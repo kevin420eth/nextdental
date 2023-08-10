@@ -43,6 +43,10 @@
   color: rgb(47, 47, 47);
 }
 
+.home__services__swiper {
+  display: none;
+}
+
 /*-------------------- Media Query --------------------*/
 
 @media screen and (max-width: 992px) {
@@ -68,14 +72,21 @@
 }
 
 @media screen and (max-width: 576px) {
-  .home__service__image__container {
-    width: 80px;
-    height: 80px;
+  .home__services__section {
+    border: 2px solid rgb(68, 255, 0);
+    padding-bottom: 50px;
   }
 
-  .home__service__text__title,
-  .home__service__text__description {
-    font-size: 0.75rem;
+  .home__sevice__container {
+    display: none;
+  }
+
+  .home__services__swiper {
+    display: block;
+  }
+
+  .home__services__swiper {
+    --swiper-navigation-size: 50px;
   }
 }
 

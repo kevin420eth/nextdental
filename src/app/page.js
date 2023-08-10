@@ -15,7 +15,7 @@ export default function Home() {
     <div>
       <main>
         <Landing />
-        {/* <About /> */}
+        <About />
         <Appointment />
         <Services />
         <Enviroment />

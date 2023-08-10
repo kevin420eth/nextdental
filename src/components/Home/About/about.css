@@ -1,10 +1,8 @@
 .home__about__section {
-  border: 2px solid black;
-  padding-top: 6rem;
+  padding-top: 80px;
 }
 
 .home__about__container {
-  border: 2px solid red;
   width: 100%;
   height: 100%;
   display: flex;
@@ -14,7 +12,6 @@
 
 .home__about__text__container {
   width: 60%;
-  border: 2px solid rgb(6, 18, 255);
 }
 
 .home__about__text {
@@ -25,13 +22,17 @@
 
 .home__about__image__container {
   width: 35%;
-  border: 2px solid rgb(6, 18, 255);
 }
 
-.home__about__image {
+.home__about__image,
+.home__about__logo__image {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.home__about__logo__image {
+  display: none;
 }
 
 /*-------------------- Media Query --------------------*/
@@ -57,24 +58,37 @@
 }
 
 @media screen and (max-width: 576px) {
-  .home__about__container {
-    flex-direction: column;
-    gap:0;
+  .home__about__section {
+    padding-top: 30px;
   }
 
-  .home__about__text__container{
+  .home__about__container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .home__about__text__container {
     width: 100%;
     order: 2;
   }
 
-  .home__about__text{
+  .home__about__text {
     text-align: center;
   }
 
   .home__about__image__container {
     order: 1;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 2rem;
+  }
+
+  .home__about__image {
+    display: none;
+  }
+
+  .home__about__logo__image {
+    display: block;
   }
 }
 

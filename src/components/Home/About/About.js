@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import about from '/public/images/about.png'
 import './about.css'
+import logo from '/public/images/logo_original.png'
 
 const About = () => {
     return (
@@ -23,6 +24,11 @@ const About = () => {
                         className='home__about__image'
                         src={about}
                         alt='about'
+                    />
+                    <Image
+                    className='home__about__logo__image'
+                    src={logo}
+                    alt='logo'
                     />
                 </div>
             </div>

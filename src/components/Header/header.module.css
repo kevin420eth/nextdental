@@ -102,12 +102,16 @@
 
 /*-------------------- Media Query -------------------*/
 @media screen and (max-width: 992px) {
-  .nav__menu{
-    gap:1.5rem;
+  .nav__menu {
+    gap: 1.5rem;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .navbar {
+    padding-left: 0.5rem;
+  }
+
   .nav__menu {
     display: none;
   }

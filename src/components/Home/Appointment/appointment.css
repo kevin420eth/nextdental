@@ -1,9 +1,11 @@
 .home__appointment__section {
-  height: 100vh;
+  border: 2px solid black;
+  /* height: 100vh; */
   padding-top: 2rem;
 }
 
 .home__appointment__container {
+  border: 2px solid rgb(234, 21, 21);
   max-height: 100%;
   display: flex;
   flex-direction: column;
@@ -46,7 +48,6 @@
 
 .home__appointment__title {
   margin-bottom: 2rem;
-  white-space: nowrap;
 }
 
 .home__appointment__description {
@@ -54,50 +55,52 @@
   white-space: nowrap;
 }
 
-/*---------- Media Query ----------*/
+/*-------------------- Media Query --------------------*/
 @media screen and (max-width: 992px) {
 }
 
 @media screen and (max-width: 768px) {
-  .home__appointment__description{
+  .home__appointment__description {
     font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .home__image__container{
-    height:180px;
-    width:180px;
+  .home__image__container {
+    height: 180px;
+    width: 180px;
   }
 
-  .home__appointment__title{
+  .home__appointment__title {
     margin-bottom: 1rem;
   }
 
-  .home__appointment__description{
+  .home__appointment__description {
     font-size: 0.75rem;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .home__image__container{
-    height:150px;
-    width:150px;
+  .home__image__container {
+    height: 150px;
+    width: 150px;
   }
 
-  .home__appointment__title{
-    font-size: 1rem;
-    margin-bottom: 1rem;
+  .home__appointment__title {
+    font-size: 1.25rem;
   }
 
-  .home__appointment__description{
+  .home__appointment__description {
     font-size: 0.625rem;
   }
 }
 
 @media screen and (max-width: 350px) {
-  .home__appointment__description{
+  .home__appointment__description {
     font-size: 0.5rem;
+  }
+  .home__appointment__title {
+    font-size: 1rem;
   }
 }
 

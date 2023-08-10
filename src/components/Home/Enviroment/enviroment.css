@@ -1,25 +1,25 @@
 .home__enviroment__section {
-  border:2px solid black;
-  height: 100vh;
+  border: 2px solid rgb(220, 0, 0);
   padding-top: 6rem;
 }
 
 .home__enviroment__container {
+  border: 2px solid black;
   width: 100%;
-  height: 100%;
   padding-bottom: 2rem;
 }
 
 .home__enviroment__content__container {
+  border: 2px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 4rem;
   margin-bottom: 2rem;
-  height: 83%;
 }
 
 .home__enviroment__image__container {
+  border: 2px solid blue;
   max-height: 100%;
   width: 40%;
   overflow: hidden;
@@ -33,10 +33,9 @@
 }
 
 .home__enviroment__text__container {
-  align-self: flex-start;
+  border: 2px solid blue;
   text-align: left;
   width: 60%;
-  height: 100%;
 }
 
 .home__enviroment__title {
@@ -47,21 +46,25 @@
   line-height: 2.5rem;
 }
 
+/*-------------------- Media Query --------------------*/
 @media screen and (max-width: 1200px) {
   .home__enviroment__text {
     font-size: 1rem;
+    line-height: 2rem;
   }
 }
 
 @media screen and (max-width: 992px) {
   .home__enviroment__text {
     font-size: 0.75rem;
+    line-height: 1.5rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .home__enviroment__content__container {
     gap: 1rem;
+    margin-bottom: 1rem;
   }
 
   .home__enviroment__text {
@@ -70,39 +73,49 @@
 }
 
 @media screen and (max-width: 576px) {
-  .home__enviroment__title {
-    font-size: 1rem;
-    margin-bottom: 0.75rem;
+  .home__enviroment__section{
+    padding-top: 0;
   }
-
-  .home__enviroment__text {
-    line-height: 1.25rem;
-    font-size: 0.5rem;
-  }
-
+  
   .home__enviroment__content__container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
   }
 
   .home__enviroment__image__container {
-    width: auto;
-    height: auto;
+    width: 150px;
+    height: 150px;
   }
 
   .home__enviroment__text__container {
     height: auto;
     width: auto;
+    text-align: center;
   }
 
   .home__enviroment__title {
-    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .home__enviroment__text {
+    line-height: 1.625rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .home__enviroment__text {
+    font-size: 0.75rem;
   }
 }
 
 @media screen and (max-width: 350px) {
+  .home__enviroment__text {
+    font-size: 0.625rem;
+    line-height: 1.375rem;
+  }
 }
 
 @media screen and (max-width: 300px) {

@@ -1,17 +1,14 @@
 .home__services__section {
-  border: 2px solid rgb(68, 255, 0);
   padding-bottom: 0;
 }
 
 .home__sevices__container {
-  border: 2px solid black;
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
 }
 
 .home__sevice__container {
-  border: 2px solid red;
   width: 30%;
   height: 100%;
   display: flex;
@@ -73,7 +70,6 @@
 
 @media screen and (max-width: 576px) {
   .home__services__section {
-    border: 2px solid rgb(68, 255, 0);
     padding-bottom: 50px;
   }
 

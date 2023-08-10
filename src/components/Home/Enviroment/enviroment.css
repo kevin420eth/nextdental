@@ -1,16 +1,13 @@
 .home__enviroment__section {
-  border: 2px solid rgb(220, 0, 0);
   padding-top: 6rem;
 }
 
 .home__enviroment__container {
-  border: 2px solid black;
   width: 100%;
   padding-bottom: 2rem;
 }
 
 .home__enviroment__content__container {
-  border: 2px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +16,6 @@
 }
 
 .home__enviroment__image__container {
-  border: 2px solid blue;
   max-height: 100%;
   width: 40%;
   overflow: hidden;
@@ -33,7 +29,6 @@
 }
 
 .home__enviroment__text__container {
-  border: 2px solid blue;
   text-align: left;
   width: 60%;
 }

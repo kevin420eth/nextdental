@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import './page.css'
 import banner from '/public/images/banner.png'
+import './page.css'
 
 export const metadata = {
     title: '澄臻美學牙醫診所 - 立即預約',
@@ -11,7 +11,7 @@ const Contact = () => {
     return (
         <div>
             <div className='banner__container'>
-                <Image src={banner} alt="banner" />
+                <Image className='banner__image' src={banner} alt="banner" />
             </div>
             <section className='contact__section section '>
                 <h1 className='section__title'>立即預約</h1>

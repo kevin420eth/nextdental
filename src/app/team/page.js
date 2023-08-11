@@ -14,7 +14,7 @@ const Team = () => {
     return (
         <div>
             <div className='banner__container'>
-                <Image src={banner} alt="banner" />
+                <Image src={banner} alt="banner" className='banner__image' />
             </div>
             <section className='team__section section '>
                 <p className='section__title'>醫療團隊</p>
@@ -23,7 +23,12 @@ const Team = () => {
                         return (
                             <Link className='doctor__profile__preview' href={`/team/${item.route}`} key={key}>
                                 <div className='doctor__photo__preview'>
-                                    <Image src={item.profilePhoto} alt={`澄臻美學牙醫診所 - ${item.name}${item.title}`} />
+                                    <Image
+                                        className='doctor__photo__image'
+                                        src={item.profilePhoto}
+                                        alt={`澄臻美學牙醫診所 - ${item.name}${item.title}`}
+                                        width={150}
+                                    />
                                 </div>
                                 <p className='doctor__name'>{item.name} {item.title}</p>
                                 <p className='major__skill'>{item.majorTreatment[0]}</p>

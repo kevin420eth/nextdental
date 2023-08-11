@@ -1,7 +1,8 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import about from '/public/images/about.png'
-import './about.css'
 import logo from '/public/images/logo_original.png'
+import './about.css'
 
 const About = () => {
     return (
@@ -26,12 +27,15 @@ const About = () => {
                         alt='about'
                     />
                     <Image
-                    className='home__about__logo__image'
-                    src={logo}
-                    alt='logo'
+                        className='home__about__logo__image'
+                        src={logo}
+                        alt='logo'
                     />
                 </div>
             </div>
+            <Link href='/contact' className='primary__button'>
+                查看診所介紹
+            </Link>
         </section>
 
     )

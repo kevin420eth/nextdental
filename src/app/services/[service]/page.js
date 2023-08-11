@@ -22,7 +22,7 @@ const Service = ({ params }) => {
     return (
         <div>
             <div className='banner__container'>
-                <Image src={banner} alt="banner" />
+                <Image className='banner__image' src={banner} alt="banner" />
             </div>
             <section className='service__section section '>
                 <h1 className='section__title'>{serviceData.serviceName}</h1>

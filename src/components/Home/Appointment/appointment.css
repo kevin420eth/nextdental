@@ -12,7 +12,7 @@
 
 @keyframes smile-animation {
   0% {
-    background-image: url("../../../../public/images/appointment_image_1.png");
+    background-image: url("../../../../public/images/appointment_image_0.png");
   }
   20% {
     background-image: url("../../../../public/images/appointment_image_2.png");
@@ -27,20 +27,20 @@
     background-image: url("../../../../public/images/appointment_image_5.png");
   }
   100% {
-    background-image: url("../../../../public/images/appointment_image_1.png");
+    background-image: url("../../../../public/images/appointment_image_0.png");
   }
 }
 
 .home__image__container {
-  border-radius: 50%;
-  height: 200px;
   width: 200px;
-  background-image: url("../../../../public/images/appointment_image_1.png");
+  height: 200px;
+  border-radius: 50%;
+  background-image: url("../../../../public/images/appointment_image_0.png");
   background-size: cover;
-  background-repeat: no-repeat;
-  animation: smile-animation 20s infinite;
-  animation-delay: 1s;
   margin-bottom: 2rem;
+  background-repeat: no-repeat;
+  /* animation: smile-animation 20s infinite;
+  animation-delay: 1s; */
 }
 
 .home__appointment__title {
@@ -57,6 +57,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .home__appointment__section {
+    padding-top: 0;
+  }
+
   .home__appointment__description {
     font-size: 1rem;
   }

@@ -5,7 +5,7 @@ const Appointment = () => {
     return (
         <section className='home__appointment__section section'>
             <div className='home__appointment__container'>
-                <div className='home__image__container'>
+                <div className='home__image__container shadow'>
                 </div>
                 <h1 className='home__appointment__title section__title'>動人笑容，總源自於雙眸綻放的神韻</h1>
                 <p className='home__appointment__description'>

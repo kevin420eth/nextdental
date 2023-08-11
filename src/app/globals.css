@@ -28,7 +28,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: rgb(0, 0, 0);
-  white-space: nowrap;
 }
 
 body,
@@ -86,6 +85,10 @@ button {
 
 .shadow {
   box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.nowrap{
+  white-space: nowrap;
 }
 
 .primary__button {

@@ -6,7 +6,7 @@ const AboutMenu = [
     },
     {
         title: '最新消息',
-        path: '/category',
+        path: '/news',
         cName:'dropdown-link'
     }
 ]

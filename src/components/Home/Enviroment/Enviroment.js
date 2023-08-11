@@ -18,7 +18,7 @@ const Enviroment = () => {
                     </div>
                     <div className='home__enviroment__text__container'>
                         <h1 className='home__enviroment__title section__title'>最舒適的醫療環境</h1>
-                        <p className='home__enviroment__text'>
+                        <p className='home__enviroment__text nowrap'>
                             我們致力於給病患最好的醫療體驗與絕對的隱私
                             <br />在這裡你可以享受國外進口的5星級葉克膜
                             <br />也有VIP獨立診間讓你能夠安心被拔牙

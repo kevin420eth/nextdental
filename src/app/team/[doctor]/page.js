@@ -4,7 +4,6 @@ import _doctorData from '@/data/doctorData'
 import banner from '/public/images/banner.png'
 
 import { AiOutlineCheck } from 'react-icons/ai'
-import dynamic from 'next/dynamic'
 
 export async function generateMetadata({ params }) {
     const doctorNamePool = ['johnnylin', 'johnnilin', 'linjohnny', 'linann', 'linpopo', 'linhathway', 'linpoki', 'linforest']
@@ -31,11 +30,13 @@ const Member = ({ params }) => {
                 <p className='section__title'>{doctorData.name} {doctorData.title}</p>
                 <div className='profile__container'>
                     <div className='profile__preview'>
-                        <div className='profile__photo'>
-                            <Image src={doctorData.profilePhoto} alt={`澄臻美學牙醫診所 - ${doctorData.name}${doctorData.title}`} />
-                        </div>
+                            <Image
+                                className='profile__photo'
+                                src={doctorData.profilePhoto}
+                                alt={`澄臻美學牙醫診所 - ${doctorData.name}${doctorData.title}`}
+                            />
                     </div>
-                    <div className='profile__text'>
+                    <div className='profile__text__container nowrap'>
                         <div className='education__container'>
                             <p className='education__title'>學經歷</p>
                             <ul className='education__list'>

@@ -1,82 +1,124 @@
 .profile__section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .profile__container {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 2rem;
-  }
-  
-  .profile__preview {
-    width: 30%;
-    margin-right: 100px;
-  }
-  
-  .profile__photo {
-    width: 100%;
-    height: 100%;
-    border-radius: 1.5rem;
-    overflow: hidden;
-    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.3);
-  }
-  
-  .profile__photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .profile__text {
-    text-align: start;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile__container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.profile__preview {
+  width: 300px;
+}
+
+.profile__photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+}
+
+.profile__text__container {
+  text-align: start;
+}
+
+.education__container,
+.major__treatment__container {
+  margin-bottom: 2rem;
+}
+
+.major__treatment__list,
+.education__list {
+  list-style: inside;
+}
+
+/*---------- Time Shift ----------*/
+
+.time__shift__title {
+  margin-bottom: 2rem;
+}
+
+.timetable {
+  background-color: rgb(255, 255, 255);
+  width: 75%;
+  border-collapse: collapse;
+  border-radius: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.timetable th,
+.timetable td {
+  border-radius: 1.5rem 2rem 0 0;
+  padding: 8px;
+  text-align: center;
+}
+
+.timetable tr {
+  border-bottom: 1px solid rgb(150, 150, 150);
+}
+
+.timetable tr:last-child {
+  border-bottom: none;
+}
+
+.time__shift__slot {
+  color: rgb(0, 185, 0);
+}
+
+/*-------------------- Media Query --------------------*/
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 992px) {
   .education__container,
   .major__treatment__container {
+    font-size: 0.875rem;
+  }
+
+  .profile__preview {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+  .profile__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile__preview {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     margin-bottom: 2rem;
   }
-  
-  .major__treatment__list,
-  .education__list {
-    list-style: inside;
+
+  .profile__photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
   }
-  
-  /*---------- Time Shift ----------*/
-  
-  .time__shift__title {
-    margin-bottom: 2rem;
-  }
-  
+
   .timetable {
-    background-color: rgb(255, 255, 255);
-    width: 75%;
-    border-collapse: collapse;
-    border-radius: 1.5rem;
-    margin-bottom: 2rem;
-    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.3);
+    font-size: 1rem;
   }
-  
-  .timetable th,
-  .timetable td {
-    border-radius: 1.5rem 2rem 0 0;
-    padding: 8px;
-    text-align: center;
-  }
-  
-  .timetable tr {
-    border-bottom: 1px solid rgb(150, 150, 150);
-  }
-  
-  .timetable tr:last-child {
-    border-bottom: none;
-  }
-  
-  .time__shift__slot {
-    color: rgb(0, 185, 0);
-  }
-  
+}
+
+@media screen and (max-width: 350px) {
+}
+
+@media screen and (max-width: 300px) {
+}

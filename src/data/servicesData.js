@@ -76,7 +76,7 @@ const servicesData = [
     {
         serviceImage: service_10,
         serviceName: "微創牙周水雷射",
-        serviceShortDescription: "水雷射殺光你口腔內的細菌",
+        serviceShortDescription: "水雷射殺光口腔的細菌",
         serviceLongDescription: "傳統牙周病治療需將感染的牙周組織翻開，透過挖除、清理的手術過程清除深層細菌，傷口範圍較大，患者常在治療期間有疼痛、腫脹甚至發炎感染等問題。而微創牙周水雷射治療，是透過雷射所釋放的能量滅除深層細菌，無需翻開牙周組織，在傷口非常微小的情況下進行治療，術後較無腫脹、疼痛、感染等問題。",
         route: "laser"
     }

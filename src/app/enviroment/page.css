@@ -1,5 +1,42 @@
 .enviroment__section {
   border: 2px solid black;
-  height: 100vh;
-  background-color: aliceblue;
+}
+
+.enviroment__container {
+  border: 2px solid black;
+  width: 100%;
+  height: 100%;
+}
+
+.enviroment__content__container {
+  border:2px solid blue;
+  width: 100%;
+  height:400px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.enviroment__image__container {
+  border: 2px solid red;
+  border-radius: 2rem;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.enviroment__content__container:nth-child(2n) > .enviroment__image__container{
+  border:2px solid rgb(77, 255, 0);
+  order:1;
+}
+
+.enviroment__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.enviroment__text__container{
+  border:2px solid red;
+  width: 50%;
 }

@@ -7,7 +7,7 @@ import Team from '@/components/Home/Team/Team'
 
 export const metadata = {
   title: '澄臻美學牙醫診所 - 首頁',
-  description: '台中市最優值得牙醫診所',
+  description: '台中市最優值的牙醫診所',
 }
 
 export default function Home() {

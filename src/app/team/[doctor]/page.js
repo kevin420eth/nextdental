@@ -12,7 +12,7 @@ export async function generateMetadata({ params }) {
 
     return {
         title: `澄臻美學牙醫診所 - ${doctorData.name}${doctorData.title}`,
-        description: '台中市最優值得牙醫診所',
+        description: '台中市最優值的牙醫診所',
     }
 }
 
@@ -30,11 +30,11 @@ const Member = ({ params }) => {
                 <p className='section__title'>{doctorData.name} {doctorData.title}</p>
                 <div className='profile__container'>
                     <div className='profile__preview'>
-                            <Image
-                                className='profile__photo'
-                                src={doctorData.profilePhoto}
-                                alt={`澄臻美學牙醫診所 - ${doctorData.name}${doctorData.title}`}
-                            />
+                        <Image
+                            className='profile__photo'
+                            src={doctorData.profilePhoto}
+                            alt={`澄臻美學牙醫診所 - ${doctorData.name}${doctorData.title}`}
+                        />
                     </div>
                     <div className='profile__text__container nowrap'>
                         <div className='education__container'>

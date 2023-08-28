@@ -20,7 +20,7 @@ const Footer = () => {
                 </div>
                 <div className='footer__contact__information'>
                     <p className='footer__telephone'>電話: (04)-22355670</p>
-                    <p className='footer__address'>地址: 台中市北屯區文心路四段151號</p>
+                    <p className='footer__address'>地址: 台中北屯區文心路四段151號</p>
 
                     <div className='footer__social__media__container'>
                         <Link href='https://line.me/ti/p/MHu0amc4sW' target='_blank'>

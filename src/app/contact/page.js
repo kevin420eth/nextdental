@@ -4,7 +4,7 @@ import './page.css'
 
 export const metadata = {
     title: '澄臻美學牙醫診所 - 立即預約',
-    description: '台中市最優值的牙醫診所',
+    description: '台中最優值的牙醫診所',
 }
 
 const Contact = () => {
@@ -23,7 +23,7 @@ const Contact = () => {
                         <h6 className='contact__information__subtitle'>官方Line帳號</h6>
                         <p className='contact__informaion'>@johnnylin666</p>
                         <h6 className='contact__information__subtitle'>地址</h6>
-                        <a className='contact__informaion' href='https://www.google.com/maps/place/No.+151,+Section+4,+Wenxin+Rd,+Beitun+District,+Taichung+City,+406/@24.1737704,120.6734719,17z/data=!3m1!4b1!4m6!3m5!1s0x346917d03fcc05d1:0xe3a69a44e353d314!8m2!3d24.1737655!4d120.6760468!16s%2Fg%2F11csgrbr2s?entry=ttu' target='blank'>台中市北屯區文心路四段151號</a>
+                        <a className='contact__informaion' href='https://www.google.com/maps/place/No.+151,+Section+4,+Wenxin+Rd,+Beitun+District,+Taichung+City,+406/@24.1737704,120.6734719,17z/data=!3m1!4b1!4m6!3m5!1s0x346917d03fcc05d1:0xe3a69a44e353d314!8m2!3d24.1737655!4d120.6760468!16s%2Fg%2F11csgrbr2s?entry=ttu' target='blank'>台中北屯區文心路四段151號</a>
                         <h6 className='contact__information__subtitle'>門診時間</h6>
                         <div className='time__list__container'>
                             <dl className='time__list'>

@@ -12,7 +12,7 @@ export async function generateMetadata({ params }) {
 
     return {
         title: `澄臻美學牙醫診所 - ${doctorData.name}${doctorData.title}`,
-        description: '台中市最優值的牙醫診所',
+        description: '台中最優值的牙醫診所',
     }
 }
 

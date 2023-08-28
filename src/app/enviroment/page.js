@@ -8,7 +8,7 @@ import enviroment__3 from '/public/images/enviroment_3.png'
 
 export const metadata = {
     title: '澄臻美學牙醫診所 - 診所環境',
-    description: '台中市最優值的牙醫診所',
+    description: '台中最優值的牙醫診所',
 }
 
 const Enviroment = () => {

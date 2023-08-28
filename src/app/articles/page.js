@@ -13,7 +13,7 @@ import case_10 from '/public/images/case_10.png'
 
 export const metadata = {
     title: '澄臻美學牙醫診所 - 相關文章',
-    description: '台中市最優值的牙醫診所',
+    description: '台中最優值的牙醫診所',
 }
 
 const Articles = () => {

@@ -9,7 +9,7 @@ export async function generateMetadata({ params }) {
     const serviceData = _servicesData[serviceIndex]
 
     return {
-        title: `澄臻美學牙醫診所 - ${serviceData.serviceName}`,
+        title: `日日美學牙醫診所 - ${serviceData.serviceName}`,
         description: '台中最優值的牙醫診所',
     }
 }
@@ -28,7 +28,7 @@ const Service = ({ params }) => {
                 <h1 className='section__title'>{serviceData.serviceName}</h1>
                 <div className='service__container'>
                     <div className='service__image__container'>
-                        <Image className='service__image' src={serviceData.serviceImage} alt={`澄臻美學牙醫診所 - ${serviceData.serviceName}`} />
+                        <Image className='service__image' src={serviceData.serviceImage} alt={`日日美學牙醫診所 - ${serviceData.serviceName}`} />
                     </div>
                     <div className='text__container'>
                         <p className='service__description'>{serviceData.serviceLongDescription}</p>

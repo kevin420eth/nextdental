@@ -6,7 +6,7 @@ import doctorData from '@/data/doctorData'
 import banner from '/public/images/banner.png'
 
 export const metadata = {
-    title: '澄臻美學牙醫診所 - 醫療團隊',
+    title: '日日美學牙醫診所 - 醫療團隊',
     description: '台中最優值的牙醫診所',
 }
 
@@ -26,7 +26,7 @@ const Team = () => {
                                     <Image
                                         className='doctor__photo__image'
                                         src={item.profilePhoto}
-                                        alt={`澄臻美學牙醫診所 - ${item.name}${item.title}`}
+                                        alt={`日日美學牙醫診所 - ${item.name}${item.title}`}
                                         width={150}
                                     />
                                 </div>

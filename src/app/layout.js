@@ -6,7 +6,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: '澄臻美學牙醫診所',
+  title: '日日美學牙醫診所',
   description: '台中最優值的牙醫診所',
 }
 

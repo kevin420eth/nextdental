@@ -6,7 +6,7 @@ import Services from '@/components/Home/Services/Services'
 import Team from '@/components/Home/Team/Team'
 
 export const metadata = {
-  title: '澄臻美學牙醫診所 - 首頁',
+  title: '日日美學牙醫診所 - 首頁',
   description: '台中最優值的牙醫診所',
 }
 

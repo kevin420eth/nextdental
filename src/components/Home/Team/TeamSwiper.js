@@ -36,7 +36,7 @@ const TeamSwiper = () => {
                 return (
                     <SwiperSlide className='home__team__slide shadow' key={key}>
                         <Link href={`/team/${item.route}`}>
-                            <Image src={item.profilePhoto} alt={`澄臻美學牙醫診所 - ${item.name}${item.title}`}></Image>
+                            <Image src={item.profilePhoto} alt={`日日美學牙醫診所 - ${item.name}${item.title}`}></Image>
                             <div className='home__team__slide__mask'>
                                 <p>{item.name} {item.title}</p>
                             </div>

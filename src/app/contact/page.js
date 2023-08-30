@@ -3,7 +3,7 @@ import banner from '/public/images/banner.png'
 import './page.css'
 
 export const metadata = {
-    title: '澄臻美學牙醫診所 - 立即預約',
+    title: '日日美學牙醫診所 - 立即預約',
     description: '台中最優值的牙醫診所',
 }
 
@@ -40,7 +40,7 @@ const Contact = () => {
                         </div>
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.9420369145796!2d120.6760468!3d24.1737655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346917d03fcc05d1%3A0xe3a69a44e353d314!2sNo.%20151%2C%20Section%204%2C%20Wenxin%20Rd%2C%20Beitun%20District%2C%20Taichung%20City%2C%20406!5e0!3m2!1sen!2stw!4v1689439553747!5m2!1sen!2stw"
-                            title="Google地圖 - 澄臻美學牙醫診所"
+                            title="Google地圖 - 日日美學牙醫診所"
                             allowFullScreen=""
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade">

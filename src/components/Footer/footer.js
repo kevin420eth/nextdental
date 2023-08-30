@@ -55,7 +55,7 @@ const Footer = () => {
                 </div>
             </div>
             <hr />
-            <p className='footer__rights__reserved'>Copyright© {currentYear} 澄臻美學牙醫診所 版權所有</p>
+            <p className='footer__rights__reserved'>Copyright© {currentYear} 日日美學牙醫診所 版權所有</p>
         </div>
     )
 }

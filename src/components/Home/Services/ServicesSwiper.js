@@ -36,7 +36,7 @@ const ServicesSwiper = () => {
                 return (
                     <SwiperSlide className='home__services__slide shadow 646' key={key}>
                         <Link href={`/services/${item.route}`}>
-                            <Image src={item.serviceImage} alt={`澄臻美學牙醫診所 - ${item.serviceName}`}></Image>
+                            <Image src={item.serviceImage} alt={`日日美學牙醫診所 - ${item.serviceName}`}></Image>
                             <div className='home__team__slide__mask'>
                                 <p>{item.serviceName}</p>
                             </div>

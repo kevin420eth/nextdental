@@ -32,7 +32,7 @@ const Header = () => {
       <ul className={click ? `${styles.nav__menu} ${styles.active}` : styles.nav__menu}>
         <li className={styles.nav__item} onMouseEnter={() => { setDropdownAbout(true) }} onMouseLeave={() => { setDropdownAbout(false) }}>
           <Link href='/' className={styles.nav__link} >
-            關於澄臻 <i className={styles.arrow__icon}>{<AiOutlineDown />}</i>
+            關於日日 <i className={styles.arrow__icon}>{<AiOutlineDown />}</i>
           </Link>
           {dropdownabout && <AboutDropDown />}
         </li>
@@ -74,7 +74,7 @@ const Header = () => {
 
       <div className={`${styles.mobile__menu} ${click ? styles.mobile__menu__open : styles.mobile__menu__close}`}>
         <div className={styles.mobile__menu__logo__container}>
-          <p>澄臻美學牙醫診所</p>
+          <p>日日美學牙醫診所</p>
         </div>
         <ul className={styles.mobile__menu__list}>
           <li className={styles.mobile__nav__item} onClick={() => { closeMobileMenu() }}>
@@ -82,7 +82,7 @@ const Header = () => {
               <i className={styles.mobile__menu__item__icon}>
                 <LiaToothSolid />
               </i>
-              關於澄臻
+              關於日日
             </Link>
           </li>
 

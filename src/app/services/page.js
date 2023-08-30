@@ -5,7 +5,7 @@ import banner from '/public/images/banner.png'
 import servicesData from '@/data/servicesData'
 
 export const metadata = {
-    title: '澄臻美學牙醫診所 - 診療項目',
+    title: '日日美學牙醫診所 - 診療項目',
     description: '台中最優值的牙醫診所',
 }
 
@@ -22,7 +22,7 @@ const Services = () => {
                         return (
                             <Link className='services__showcase' href={`/services/${item.route}`} key={key}>
                                 <div className='services__showcase__image__container'>
-                                    <Image className='services__showcase__image' src={item.serviceImage} alt={`澄臻美學牙醫診所 - ${item.serviceName}`} />
+                                    <Image className='services__showcase__image' src={item.serviceImage} alt={`日日美學牙醫診所 - ${item.serviceName}`} />
                                 </div>
                                 <div className='services__showcase__text__container'>
                                     <p className='services__showcase__service__name'>{item.serviceName}</p>

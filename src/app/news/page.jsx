@@ -3,7 +3,7 @@ import banner from '/public/images/banner.png'
 import './page.css'
 
 export const metadata = {
-    title: '澄臻美學牙醫診所 - 最新消息',
+    title: '日日美學牙醫診所 - 最新消息',
     description: '台中最優值的牙醫診所',
 }
 

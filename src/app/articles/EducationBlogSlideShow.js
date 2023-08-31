@@ -17,13 +17,19 @@ const EducationBlogSlideShow = () => {
         <>
             <Swiper
                 className='education__blog__swiper'
-                slidesPerView={3}
-                grid={{ rows: 2 }}
+                slidesPerView={1}
+                grid={{ rows: 1 }}
                 spaceBetween={30}
                 navigation={true}
                 pagination={{ clickable: true }}
                 autoplay={{ delay: 3000, pauseOnMouseEnter: true }}
                 modules={[Grid, Pagination, Navigation, Autoplay]}
+                breakpoints={{
+                    768:{
+                        slidesPerView:3,
+                        grid:{rows:2}
+                    }
+                }}
             >
                 {EducationData.map((item, key) => {
                     return (

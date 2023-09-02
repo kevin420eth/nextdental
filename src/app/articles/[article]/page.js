@@ -32,7 +32,7 @@ const Article = ({ params }) => {
                     </div>
                     <h1 className='article__title'>怎麼正確的刷牙?</h1>
                     <div className='article__content'>
-                        青春痘治療，好不容易穩定了，紅紅的痘印，黑黑的痘痕，依然留在臉上揮之不去，嚴重影響外觀容貌。 "醫生! 有沒有快速消疤的方法?" 這是青春痘族群的心聲，也是青春痘族群的痛點，紅痘疤與黑痘疤難消難退，美美的一張臉，就是多出了這瑕疵...
+                        青春痘治療
                     </div>
                 </div>
             </section>

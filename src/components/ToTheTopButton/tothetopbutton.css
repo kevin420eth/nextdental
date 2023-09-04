@@ -1,0 +1,47 @@
+.tothetopbutton {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  background-color: rgb(70, 70, 70);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top__arrow__icon {
+  color: white;
+  font-size: 2rem;
+}
+
+/*-------------------- Media Query --------------------*/
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+    .tothetopbutton{
+        width:40px;
+        height:40px;
+        right:10px;
+        bottom:10px;
+    }
+
+    .top__arrow__icon{
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 350px) {
+}
+
+@media screen and (max-width: 300px) {
+}

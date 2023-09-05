@@ -10,6 +10,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 8px;
+}
+
+.tothetopbutton_hide {
+  display: none;
 }
 
 .top__arrow__icon {
@@ -25,16 +30,16 @@
 }
 
 @media screen and (max-width: 768px) {
-    .tothetopbutton{
-        width:40px;
-        height:40px;
-        right:10px;
-        bottom:10px;
-    }
+  .tothetopbutton {
+    width: 40px;
+    height: 40px;
+    right: 10px;
+    bottom: 10px;
+  }
 
-    .top__arrow__icon{
-        font-size: 1.25rem;
-    }
+  .top__arrow__icon {
+    font-size: 1.25rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
